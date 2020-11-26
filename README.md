@@ -14,8 +14,7 @@ We propose a new deep learning model for goal-driven tasks that require intuitiv
 
 [![YouTube](https://img.youtube.com/vi/X30QGeIEXRs/0.jpg)](https://youtu.be/X30QGeIEXRs)
 
-[NeurIPS 2020 presentation](https://youtu.be/X30QGeIEXRs) is a Benchmark For Physical Reasoning
-
+[NeurIPS 2020 video presentation](https://youtu.be/X30QGeIEXRs)
 
 # Action generation model
 
@@ -24,6 +23,10 @@ We propose a new deep learning model for goal-driven tasks that require intuitiv
 **Top:** Action generation pipeline. NNs modules are highlighted with green rectangles. The task's initial scene is presented to the agent as five bitmap channels; one channel for each object class: Green target-object, blue dynamic goal-object, blue static goal-object, dynamic grey objects, static black objects.  **Bottom left** Model prediction examples. All examples of the generated *final action* in the figure solve the corresponding tasks.  **Bottom right:** Model architecture details: Every Conv2d and ConvTransposed2d Layer has a kernel size of 4x4, stride of 2 and padding of 1.
 
 # Citation
+
+[![arXiv](imgs/2011.07357.png)](https://arxiv.org/abs/2011.07357)
+
+[arXiv](https://arxiv.org/abs/2011.07357)
 
 ```bibtex
 @article{harter2020phyre,

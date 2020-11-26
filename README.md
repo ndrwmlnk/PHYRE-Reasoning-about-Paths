@@ -3,6 +3,7 @@
 [![GitHub license](https://img.shields.io/badge/license-Apache-blue.svg)](LICENSE)
 
 [arXiv](https://arxiv.org/abs/2011.07357)
+
 **PHYRE** is a Benchmark For Physical Reasoning
 
 ![phyre](imgs/phyre_tasks.gif)

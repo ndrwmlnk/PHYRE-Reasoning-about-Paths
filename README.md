@@ -29,11 +29,11 @@ We propose a new deep learning model for goal-driven tasks that require intuitiv
 [arXiv](https://arxiv.org/abs/2011.07357)
 
 ```bibtex
-@article{harter2020phyre,
-    title={Solving Physics Puzzles by Reasoning about Paths},
-    author={Augustin Harter and Andrew Melnik and Gaurav Kumar and Dhruv Agarwal and Animesh Garg and Helge Ritter},
-    year={2020},
-    journal={arXiv:2020.00000}
+@article{harter2020solving,
+  title={Solving Physics Puzzles by Reasoning about Paths},
+  author={Harter, Augustin and Melnik, Andrew and Kumar, Gaurav and Agarwal, Dhruv and Garg, Animesh and Ritter, Helge},
+  journal={arXiv preprint arXiv:2011.07357},
+  year={2020}
 }
 ```
 

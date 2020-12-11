@@ -169,7 +169,7 @@ def vis_batch(batch, path, pic_id, text = [], rows=[], descr=[], save=True, font
         draw = ImageDraw.Draw(img)
         
         for i, words in enumerate(text):
-            x, y = row_width+i*(reshaped.shape[1]-row_width-descr_wid)//len(text), 3
+            x, y = 3+row_width+i*(reshaped.shape[1]-row_width-descr_wid)//len(text), 0
             draw.text((x, y), words, fill=(0) if len(reshaped.shape)==2 else (0,0,0), font=font)
 
         for j, words in enumerate(rows):

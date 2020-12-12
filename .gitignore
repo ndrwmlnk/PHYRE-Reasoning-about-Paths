@@ -2,3 +2,4 @@ data/
 result/
 saves/
 solutions/
+__pycache__/

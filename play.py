@@ -8,18 +8,16 @@ from matplotlib import pyplot as plt
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
-    parser.add_argument("--templates", type=str, default="")
-    parser.add_argument("--fold", type=int, default=0)
-    parser.add_argument("--setup", type=str, default="within")
-    parser.add_argument("-eval", action="store_true")
+    parser.add_argument("--tasks", type=str, default="", help="specify custom tasks to solve separeted by comma, e.g.: '00022:578','00022:638','00022:649','00022:695','00022:696' ")
+    parser.add_argument("--fold", type=int, default=0, help="fold number of the test tasks to evaluate on")
+    parser.add_argument("--setup", type=str, default="within", help="evaluations etup: 'cross' or 'within'")
+    parser.add_argument("-noeval", action="store_true", help="use this flag to only produce actions and dont evaluate and save solutions")
     args = parser.parse_args()
-
-
 
     setup = "ball_"+args.setup+"_template"
     path = "final-test"
 
-    if not args.templates:
+    if not args.tasks:
         train_ids, dev_ids, test_ids = phyre.get_fold(setup, args.fold)
         tasks = test_ids
     else:
@@ -29,7 +27,7 @@ if __name__ == '__main__':
     solver.load_models(load_from=-1)
     actions, pipelines = solver.get_actions(tasks)
 
-    if args.eval:
+    if not args.noeval:
         print()
         os.makedirs("./solutions/", exist_ok = True)
         sim = phyre.initialize_simulator(tasks, 'ball')
@@ -66,5 +64,5 @@ if __name__ == '__main__':
                 if res.status.is_solved():
                     solved = True
         print(eva.compute_all_metrics())
-
-    print(actions[0])
+    else:
+        print(actions)

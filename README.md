@@ -8,6 +8,14 @@
 
 ![phyre](imgs/phyre_tasks.gif)
 
+# How to use our modeL
+
+## Training
+simply run train.py, use flag -h for additional argument information
+
+## Testing
+first train for the fold and setup you want to evaluate and then simply run play.py, use -h for additional information
+
 # Abstract
 
 We propose a new deep learning model for goal-driven tasks that require intuitive physical reasoning and intervention in the scene to achieve a desired end goal. Its modular structure is motivated by hypothesizing a sequence of intuitive steps that humans apply when trying to solve such a task. The model first predicts the path the target object would follow without intervention and the path the target object should follow in order to solve the task. Next, it predicts the desired path of the action object and generates the placement of the action object. All components of the model are trained jointly in a supervised way; each component receives its own learning signal but learning signals are also backpropagated through the entire architecture. To evaluate the model we use PHYRE - a benchmark test for goal-driven physical reasoning in 2D mechanics puzzles.

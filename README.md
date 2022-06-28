@@ -2,7 +2,8 @@
 
 [![GitHub license](https://img.shields.io/badge/license-Apache-blue.svg)](LICENSE)
 
-[arXiv:2011.07357](https://arxiv.org/abs/2011.07357)
+[arXiv:2011.07357](https://arxiv.org/abs/2011.07357)  
+[NeurIPS 2020 video presentation](https://youtu.be/X30QGeIEXRs)
 
 **PHYRE** is a Benchmark For Physical Reasoning
 
